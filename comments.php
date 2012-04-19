@@ -6,7 +6,7 @@
 		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  // and it doesn't match the cookie
 			?>
 
-<p class="nocomments">Yazı parola korumalı.Yorumları görebilmek için parolayı girin.</p>
+<p class="nocomments">Password please.</p>
 <?php
 			return;
 		}
@@ -33,20 +33,16 @@
 
 
 
-
-<?php foreach ($comments as $comment) : ?>
-        <div class="singlecomment clearfix admin" <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
-          <a class="commenter" href="<?php comment_author_link() ?>">
-              <p style="background-image: url(http://files-cdn.formspring.me/profile/20110331/n4d9445d64bd7e_small.jpg)" class="iconize">&nbsp;</p>
-
-            <p class="title"><?php _e('')?></p>
-          </a>
+  <?php foreach ($comments as $comment) : ?>
+        <div class="singlecomment clearfix" <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
+         <p class='author'><?php comment_author_link() ?> <span class='date'><?php comment_date('j F Y') ?> <?php comment_time('H:i') ?></span></p>
           <p><?php comment_text() ?></p>
           <?php if ($comment->comment_approved == '0') : ?>
           <p class="moderate"><?php _e('Waiting for moderation.')?>.</p>
+        </div>  
         <?php endif; ?>
 
-        </div> <!-- admin comment --> 
+
 
   <?php
     /* Changes every other comment to a different class */
@@ -77,9 +73,9 @@
 <?php if ('open' == $post->comment_status) : ?>
 <div class="commentarea clearfix square">
 
-<h3 id="respond"><?php _e('Yorum yap, fikrini paylaş')?></h3>
+<h3 id="respond"><?php _e('')?></h3>
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p><?php _e('Yorum yapabilmek için')?> <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>"><?php _e('giriş')?></a> <?php _e('yapmalısınız')?>.</p>
+<p><a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>"><?php _e('login please')?></a></p>
 <?php else : ?>
 <form id="new_app" class="app_form borderize clearfix" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform" accept-charset="UTF-8">
    <?php if ( $user_ID ) : ?>

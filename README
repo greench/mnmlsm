@@ -1,0 +1,43 @@
+mnmlsm
+=========
+
+
+
+A WordPress theme by [RSS](https://github.com/rssems/), inspired by Dustin Curtis, special thanks for Ahmet Alp Balkan.
+
+[Demo](http://www.rss-ems.com/beta/mnmlsm) & [Download WordPress Theme](https://github.com/rssems/mnmlsm/downloads).
+
+
+Features
+--------
+
+* Pre-built 'index.php', 'header.php', 'single.php', 'comments.php'
+* HTML 5 + CSS 3
+* SEO 
+* @font-face
+* Official blog post [rss](http://www.rss-ems.com/blog)
+
+
+Still in the works...
+---------------
+
+* Custom Theme Settings for sidebar
+* Pages
+* Search
+* 
+
+
+What you need to know
+--------
+
+**To change sidebar information use:**
+
+> header.php line 60-63
+
+Happy usign!
+
+
+A WordPress Theme.
+http://github.com/rssems/mnmlsm
+
+

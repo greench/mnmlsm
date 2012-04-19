@@ -4,10 +4,9 @@
 
 
 <section id="conductor">
-	<!-- 
 	<header>
-		<h3 class="quote">"Make everything as simple as possible, but not simpler." Albert Einstein</h3>
-	</header> -->
+	<h3><?php echo date('F j, Y') ?></h3>
+	</header>
 
 
 	<ul class="posts">
@@ -26,7 +25,7 @@
 			</figure>
 			<article>
 				<h2>
-					<a href="<?php the_permalink() ?>"><?php the_title(); ?></a><a class="anchor" href="#">&#182;</a>
+					<a href="<?php the_permalink() ?>"><?php the_title(); ?></a><a class="anchor" href="<?php the_permalink() ?>">&#9875;</a>
 				</h2>
 
 				<?php the_content(); ?>
@@ -35,6 +34,20 @@
 		</li>
 <?php endwhile; else: ?>
 <?php endif; ?>
+		<li class="pagination padded">
+
+			<nav class="pagination">
+				<div class="buttonize square next">
+					<?php next_posts_link('Next &rarr;') ?>
+				</div>
+				<?php if (is_front_page()) {?>
+					<div class="buttonize square prev">
+						<?php previous_posts_link('&larr; Prev') ?>
+					</div>
+				<?php } ?>
+			</nav>
+
+		</li>
 	</ul>
 
 
