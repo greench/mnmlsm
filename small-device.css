@@ -1,0 +1,47 @@
+header#simple{
+	clear: both;
+	position: relative;
+	width: 100%;
+	min-height: 0;
+	border:0
+}
+header#simple h1{
+	padding-top:5px;
+}
+
+ul#user_info{
+	margin:0 auto;
+	left:0;
+	top:0;
+	text-align:center
+}
+p.copyleft{
+	text-align:center;
+	position: relative;
+	left:0
+}
+article h2{
+	text-align:center
+}
+section#conductor header{
+	text-align:center;
+	padding:10px
+}
+figure.hover-select{
+	display: none
+}
+
+ul.posts{
+	min-width:auto
+}
+section#conductor{
+	left:0;
+	position: relative
+}
+ul.posts {
+	min-width:100%;
+}
+ul.posts li article {
+	width:100%;
+	padding:4px 4px 4px 5px
+}

@@ -12,6 +12,11 @@ Additional Author: ahmet alp balkan
 Additional Author URI: http://ahmetalpbalkan.com/blog
 */
 
+/*
+Additional Author: Çağlar Yeşilyurt
+Additional Author URI: http://zettlina.com/
+*/
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -152,7 +157,6 @@ header#simple {
 	bottom: 0px;
 	border-right: 1px solid #e2e2e2;
 	background-color: #fff;
-
 	border-bottom: 1px solid #e2e2e2;
 }
 
@@ -165,9 +169,9 @@ p.copyleft {
 	margin: 0;
 }
 
-    p.copyleft a { 
-        color: #aaa; 
-    } 
+p.copyleft a { 
+    color: #aaa; 
+} 
 
 .copyleftRSS {
 	-webkit-transform: rotate(180deg);
@@ -194,17 +198,15 @@ header#simple h1 {
 	letter-spacing: -3px;
 }
 
-header#simple h1 a { border: 0;  }
+header#simple h1 a { border: 0; }
 
 header#simple h2 {
-        padding: 20px 15px;
+    padding: 20px 15px;
 	font-weight: 200;
 	margin: 0 auto;
-	text-align:center; 
-
+	text-align: center; 
 	font-size: 18px;
 	line-height: 25px;
-
 	color: #585c60;
 }
 
@@ -214,10 +216,8 @@ header#simple h3 {
 	font-weight: 300;
 	margin: 0px;
 	margin-top: 10px;
-
 	font-size: 16px;
 	line-height: 25px;
-
 	color: #ccc;
 }
 
@@ -424,7 +424,6 @@ article p.post_end a {
 	padding-bottom: 12px;
 	display: inline-block;
 	font-weight: 600;
-
 	border: 0;
 }
 
@@ -444,7 +443,7 @@ article p.post_end a {
 	border-radius: 5px;
 }
 
-figure.hover_select {
+figure.hover-select {
 	position: absolute;
 	right: 30px;
 	top: 70px;
@@ -453,7 +452,7 @@ figure.hover_select {
 	text-align: center;
 }
 
-figure.hover_select.poke {
+figure.hover-select.poke {
 	 position: relative; 
 	 top: auto; 
 	 right: auto;
@@ -462,7 +461,7 @@ figure.hover_select.poke {
 	 float: left;
 }
 
-figure.hover_select div.circle {
+figure.hover-select div.circle {
 	position: relative;
 	display: block;
 	width: 40px;
@@ -473,7 +472,7 @@ figure.hover_select div.circle {
 	margin: 0 auto;
 }
 
-figure.hover_select.poke div.circle {
+figure.hover-select.poke div.circle {
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
@@ -481,7 +480,7 @@ figure.hover_select.poke div.circle {
 	border: 10px solid #5b9819;
 }
 
-figure.hover_select p {
+figure.hover-select p {
 	display: block;
 	line-height: 18px;
 	font-family: "ProximaNovaLight", sans-serif;
@@ -495,52 +494,52 @@ figure.hover_select p {
 
 }
 
-figure.hover_select p.identifier {
+figure.hover-select p.identifier {
 	font-size: 11px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	line-height: 11px;
 }
 
-figure.hover_select p.kcount {
+figure.hover-select p.kcount {
 		margin-bottom: 5px;
 		margin-top: 4px;
 }
 
-figure.hover_select.done p.kcount {
+figure.hover-select.done p.kcount {
 	text-transform: uppercase;
 	font-size: 15px;
 	margin-top: 5px;
 	letter-spacing: 1px;
 }
 
-figure.hover_select.poke p.kcount {
+figure.hover-select.poke p.kcount {
 	color: #5b9819;
 }
 
-figure.hover_select.poke.done p.kcount {
+figure.hover-select.poke.done p.kcount {
 	color: #000;
 }
 
-figure.hover_select p.kcount.active {
+figure.hover-select p.kcount.active {
 	font-size: 15px;
 	margin-top: 10px;
 }
 
-figure.hover_select.done div.circle {
+figure.hover-select.done div.circle {
 	background: #000 url(images/brand/white_lightning.png) center center no-repeat;
 	border: 4px solid #000;
 }
 
-figure.hover_select.poke.done div.circle {
+figure.hover-select.poke.done div.circle {
 	border: 10px solid #000;
 }
 
-figure.hover_select.done div.filled {
+figure.hover-select.done div.filled {
 	display: none;
 }
 
-figure.hover_select div.filled {
+figure.hover-select div.filled {
 	position: absolute;
 	background-color: #000;
 	width: 40px;
@@ -551,10 +550,13 @@ figure.hover_select div.filled {
 	top: 0px;
 	-webkit-transform: scale(0.2);
 	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
 }
 
 
-figure.hover_select.poke div.filled {
+figure.hover-select.poke div.filled {
 	position: absolute;
 	background-color: #5b9819;
 	width: 100px;
@@ -565,28 +567,61 @@ figure.hover_select.poke div.filled {
 	top: 0px;
 	-webkit-transform: scale(0.2);
 	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	-ms-transform: scale(0.2);
+	transform: scale(0.2);
 }
-
-figure.hover_select.animate div.filled {
+/*Dön bak buraya*/
+figure.hover-select.animate div.filled {
 	-webkit-animation-name: hoverPulse;
 	-moz-animation-name: hoverPulse;
+	-ms-animation-name: hoverPulse;
+	-o-animation-name: hoverPulse;
+	animation-name: hoverPulse;
+
 	-webkit-animation-duration: 3s;
 	-moz-animation-duration: 3s;
+	-ms-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	animation-duration: 3s;
+
 	-webkit-animation-iteration-count: infinite;
 	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+
 	-webkit-animation-timing-function:linear;
 	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
 }
 
-figure.hover_select:hover div.filled {
-  -webkit-animation-name: hoverSelect;
-  -moz-animation-name: hoverSelect;
+figure.hover-select:hover div.filled {
+	-webkit-animation-name: hoverSelect;
+	-moz-animation-name: hoverSelect;
+	-ms-animation-name: hoverSelect;
+	-o-animation-name: hoverSelect;
+	animation-name: hoverSelect;
+
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+
 	-webkit-animation-iteration-count: 1;
 	-moz-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+
 	-webkit-animation-timing-function:linear;
 	-moz-animation-timing-function:linear;
+	-ms-animation-timing-function:linear;
+	-o-animation-timing-function:linear;
+	animation-timing-function:linear;
 }
 
 p.no_posts {
@@ -600,50 +635,159 @@ p.no_posts {
 
 /* animations */
 
-@-moz-keyframes hoverSelect 
-	{       
-	0% {
-		-moz-transform: scale(0.1); 
-	}
-	100% {
-		-moz-transform: scale(1.1);  
-	}
+@keyframes hoverSelect {
+ 0% {
+    -webkit-transform: scale(0.1);
+   	-moz-transform: scale(0.1);
+   	-o-transform: scale(0.1);
+   	-ms-transform: scale(0.1);
+   	transform: scale(0.1);
+ }
+ 100% {
+    -webkit-transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+   	-o-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+   	transform: scale(1.1);
+ }
+
 }
 
-@-webkit-keyframes hoverSelect
-	{       
-	0% {
-		-webkit-transform: scale(0.1); 
-	}
-	100% {
-		-webkit-transform: scale(1.1);  
-	}
+@-moz-keyframes hoverSelect {
+ 0% {
+   -moz-transform: scale(0.1);
+   transform: scale(0.1);
+ }
+ 100% {
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
 }
 
-@-webkit-keyframes hoverPulse
-	{       
-	0% {
-		-webkit-transform: scale(0.2); 
-	}
-	50% {
-		-webkit-transform: scale(0.35);
-	}
-	100% {
-		-webkit-transform: scale(0.2);  
-	}
+@-webkit-keyframes hoverSelect {
+ 0% {
+   -webkit-transform: scale(0.1);
+   transform: scale(0.1);
+ }
+ 100% {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
 }
 
-@-moz-keyframes hoverPulse
-	{       
-	0% {
-		-moz-transform: scale(0.2); 
-	}
-	50% {
-		-moz-transform: scale(0.35);
-	}
-	100% {
-		-moz-transform: scale(0.2);  
-	}
+@-ms-keyframes hoverSelect {
+ 0% {
+   -ms-transform: scale(0.1);
+   transform: scale(0.1);
+ }
+ 100% {
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+}
+
+@-o-keyframes hoverSelect {
+ 0% {
+   -o-transform: scale(0.1);
+   transform: scale(0.1);
+ }
+ 100% {
+   -o-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
+}
+
+@keyframes hoverPulse {
+ 0% {
+    -webkit-transform: scale(0.2);
+   	-moz-transform: scale(0.2);
+   	-o-transform: scale(0.2);
+   	-ms-transform: scale(0.2);
+   	transform: scale(0.2);
+ }
+ 50% {
+    -webkit-transform: scale(0.35);
+   	-moz-transform: scale(0.35);
+   	-o-transform: scale(0.35);
+   	-ms-transform: scale(0.35);
+   	transform: scale(0.35);
+ }
+ 100% {
+    -webkit-transform: scale(0.2);
+   	-moz-transform: scale(0.2);
+   	-o-transform: scale(0.2);
+   	-ms-transform: scale(0.2);
+   	transform: scale(0.2);
+ }
+
+}
+
+@-moz-keyframes hoverPulse {
+ 0% {
+   -moz-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+ 50% {
+   -moz-transform: scale(0.35);
+   transform: scale(0.35);
+ }
+ 100% {
+   -moz-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+
+}
+
+@-webkit-keyframes hoverPulse {
+ 0% {
+   -webkit-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+ 50% {
+   -webkit-transform: scale(0.35);
+   transform: scale(0.35);
+ }
+ 100% {
+   -webkit-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+
+}
+
+@-ms-keyframes hoverPulse {
+ 0% {
+   -ms-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+ 50% {
+   -ms-transform: scale(0.35);
+   transform: scale(0.35);
+ }
+ 100% {
+   -ms-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+
+}
+
+@-o-keyframes hoverPulse {
+ 0% {
+   -o-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+ 50% {
+   -o-transform: scale(0.35);
+   transform: scale(0.35);
+ }
+ 100% {
+   -o-transform: scale(0.2);
+   transform: scale(0.2);
+ }
+
 }
 
 div.notification {
@@ -663,7 +807,7 @@ div.notification {
 }
 
 
-a.hover_select.notify {
+a.hover-select.notify {
 	position: relative;
 	left: 43%;
 	top: 40px;
@@ -729,20 +873,21 @@ p.draft_notice {
 
 
 code {
-	border-left: 10px solid #000;
-	padding-left: 20px;
-	margin-left: 0px;
-	font-size: 15px;
-	line-height: 25px;
-	margin-top: 0px;
-	margin-bottom: 20px;
 	color: #4D4D4D;
 	font-family: 'ProximaNovaLight', sans-serif;
-	display: block;
+	text-shadow: 0px 0px 0px #444444;
 }
 
 pre {
+	border-left: 10px solid #000000;
 	display: block;
+	font-family: "ProximaNovaLight", sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-left: 20px;
 }
 
 li.padded {
@@ -752,9 +897,24 @@ li.padded {
 }
 
 .commentarea {
-    -moz-transition-duration: 0.1s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: linear;
+	-webkit-transition-duration: 0.1s;
+	-moz-transition-duration: 0.1s;
+	-o-transition-duration: 0.1s;
+	-ms-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	-ms-transition-property: all;
+	transition-property: all;
+
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	transition-timing-function: linear;
+	
     border:6px solid #000000;
     float: left;
     position: relative;
@@ -771,13 +931,28 @@ li.padded {
 }
 
 .text_field {
-    -moz-transition-duration: 0.1s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: linear;
-    border-top: 1px solid #DBDBDB;
-    position: relative;
-    clear: both;
-    display: inline-block;
+    -webkit-transition-duration: 0.1s;
+	-moz-transition-duration: 0.1s;
+	-o-transition-duration: 0.1s;
+	-ms-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	-ms-transition-property: all;
+	transition-property: all;
+
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	transition-timing-function: linear;
+
+	border-top: 1px solid #DBDBDB;
+	position: relative;
+	clear: both;
+	display: inline-block;
 }
 .text_field input, .text_field textarea {
     border: medium none;
@@ -806,9 +981,21 @@ li.padded {
 
 div.insertion_point {
     -moz-animation-duration: 2s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-name: insertPulse;
-    -moz-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: insertPulse;
+	-moz-animation-name: insertPulse;
+	-ms-animation-name: insertPulse;
+	-o-animation-name: insertPulse;
+	animation-name: insertPulse;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-ms-animation-timing-function: ease-in-out;
+	-o-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 .labelforcomment {
     clear: both;
@@ -860,28 +1047,33 @@ div.insertion_point {
     width: 100%;
  }
 .singlecomment {
-	padding:10px 35px;
-	width: 650px;
-	border-top: 1px solid #DBDBDB;
-	position: relative;
 	-webkit-transition-property: all;
-	-webkit-transition-duration: 0.1s;
-	-webkit-transition-timing-function: linear;
 	-moz-transition-property: all;
+	-o-transition-property: all;
+	-ms-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.1s;
 	-moz-transition-duration: 0.1s;
+	-o-transition-duration: 0.1s;
+	-ms-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+	-webkit-transition-timing-function: linear;
 	-moz-transition-timing-function: linear;
+	-o-transition-timing-function: linear;
+	-ms-transition-timing-function: linear;
+	transition-timing-function: linear;
 	display:block;
 }
 
 .title {
-	margin-top:10px;	
 	font-weight:bold;
+	margin-top:10px;
 }
 
 .author { /*comment author */
-     font-weight: bold;
-     font-size: 16px;
-     margin: 14px 0 0 0 ;
+    font-size: 16px;
+	font-weight: bold;
+    margin: 14px 0 0 0 ;
 }
 
 .author .date {
@@ -905,14 +1097,11 @@ img.avatar {
     margin-right:10px;
 }
 
-
 /* WP */
-
 .alignleft{
-	display:inline;
 	float:left;
 }
+
 .alignright{
-	display:inline;
 	float:right;
 }

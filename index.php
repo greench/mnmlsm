@@ -5,23 +5,23 @@
 
 <section id="conductor">
 	<header>
-	<h3><?php echo date('F j, Y') ?></h3>
+		<h3><?php echo date('F j, Y') ?></h3>
 	</header>
 
 
 	<ul class="posts">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<li class="post">
-			<figure class="hover_select animate">	
-				<a class="kudos" href="#comments">
+			<figure class="hover-select animate">	
+		
 					<div class="circle">
 						<div class="filled">&nbsp;</div>
 					</div>
 					<p class="kcount"><?php comments_popup_link('0', '1', '%'); ?></p>
-					<p class="identifier">Comment</p>
+					<p class="identifier">Comment(s)</p>
 					<span class="extid hide"></span>
 					<span class="permalink hide"><?php the_title(); ?></span>
-				</a>
+			
 			</figure>
 			<article>
 				<h2>
